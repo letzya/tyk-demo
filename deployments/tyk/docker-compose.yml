@@ -26,6 +26,7 @@ services:
     volumes:
       - ./deployments/tyk/volumes/tyk-gateway/tyk.conf:/opt/tyk-gateway/tyk.conf
       - ./deployments/tyk/volumes/tyk-gateway/middleware:/opt/tyk-gateway/middleware
+      - ./deployments/tyk/volumes/tyk-gateway/plugin:/opt/tyk-gateway/plugin
     depends_on:
       - tyk-redis
   tyk-pump:
